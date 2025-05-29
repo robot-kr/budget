@@ -40,7 +40,46 @@
     
     
             <div class="folium-map" id="map_e7e885e2fd85d4a4f42887c96a79c7f3" ></div>
-        
+               
+    <div id="legend">
+    <h4>범례</h4>
+    <div><span class="marker red"></span> 업무시간 외 사용</div>
+    <div><span class="polygon red"></span> 선거구</div>
+    <div><span class="polygon blue"></span> 양천구의회(신정6동)</div>
+    </div>
+
+    <style>
+    #legend {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+        background: white;
+        padding: 10px 14px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-family: sans-serif;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        z-index: 1000;
+    }
+
+    .marker, .polygon {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-right: 6px;
+        vertical-align: middle;
+        border-radius: 50%;
+    }
+
+    .polygon {
+        border-radius: 2px;
+        opacity: 0.6;
+    }
+
+    .red {
+        background: red;
+    }
+    </style>
 </body>
 <script>
     
