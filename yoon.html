@@ -11,6 +11,7 @@
     
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -41,6 +42,45 @@
     
             <div class="folium-map" id="map_c50e29985014cfe9fb2478d0b43fcd2b" ></div>
         
+    <div id="legend">
+    <h4>범례</h4>
+    <div><span class="marker red"></span> 의장 사용 지점</div>
+    <div><span class="polygon red"></span> 부의장 활동 지역</div>
+    </div>
+
+    <style>
+    #legend {
+        position: absolute;
+        bottom: 30px;
+        left: 10px;
+        background: white;
+        padding: 10px 14px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-family: sans-serif;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        z-index: 1000;
+    }
+
+    .marker, .polygon {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-right: 6px;
+        vertical-align: middle;
+        border-radius: 50%;
+    }
+
+    .polygon {
+        border-radius: 2px;
+        opacity: 0.6;
+    }
+
+    .red {
+        background: red;
+    }
+    </style>
+
 </body>
 <script>
     
