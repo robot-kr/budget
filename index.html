@@ -40,6 +40,15 @@
     a:hover {
       text-decoration: underline;
     }
+      a.link-wrapper {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  a.link-wrapper:hover {
+    text-decoration: none;
+  }
   </style>
 </head>
 <body>
@@ -49,7 +58,7 @@
 
   <p>아래 목록을 클릭하면 각 구의원의 업무추진비 사용 장소를 지도에서 볼 수 있습니다.</p>
   
-<div class="link-box">
+<!-- <div class="link-box">
   📍 <a href="html/윤인숙.html">윤인숙 의장</a>
   <div style="margin-top: 0.3rem; font-size: 0.9rem; color: #555;">
     3분기 합산 <strong>23,832,070원</strong>
@@ -61,7 +70,26 @@
   <div style="margin-top: 0.3rem; font-size: 0.9rem; color: #555;">
     3분기 합산 <strong>12,980,300원</strong>
   </div>
-</div>
+</div> -->
+
+<a href="html/윤인숙.html" style="text-decoration: none;">
+  <div class="link-box">
+    📍 윤인숙 의장
+    <div style="margin-top: 0.3rem; font-size: 0.9rem; color: #555;">
+      3분기 합산 <strong>23,832,070원</strong>
+    </div>
+  </div>
+</a>
+
+<a href="html/공기환.html" style="text-decoration: none;">
+  <div class="link-box">
+    📍 공기환 부의장
+    <div style="margin-top: 0.3rem; font-size: 0.9rem; color: #555;">
+      3분기 합산 <strong>12,980,300원</strong>
+    </div>
+  </div>
+</a>
+
   <div class="link-box">
     📄 <a href="https://www.ycc.go.kr/kr/news/bbs?bbs_id=business" target="_blank">
       원본 공개 자료 (양천구의회 홈페이지)
